@@ -1,3 +1,7 @@
+# Todos
+- Validate ergogen.yml
+- Add keys and customize layout in ergogen
+
 # Project goals
 - Surface mount switches
 - Crude USB switch
