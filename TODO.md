@@ -16,6 +16,9 @@
 - Cheap to make
 - bumps to ID keys in the dark
 
+# Random ideas
+- Hinged split
+
 # Over the moon
 - Bluetooth/Wi-Fi 
 - CM4 on board
