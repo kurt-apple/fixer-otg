@@ -40,10 +40,10 @@ This is the BOM. Note that most PCB prototype services have a minimum order quan
 |---|---|---| --- |
 | USB C Port | C165948 | 5 | $0.779 |
 | CH552T | C111367 | 5 | $2.543 |
-| 100nF Capacitor | C1525 | 10 | 0.012 |
-| 5.1k Resistor | C25905 | 10 | 0.005 |
-| 10k Resistor | C25744 | 5 | 0.003 |
-| Diode | C2128 | 200 | 1.78 |
+| 100nF Capacitor | C1525 | 10 | $0.012 |
+| 5.1k Resistor | C25905 | 10 | $0.005 |
+| 10k Resistor | C25744 | 5 | $0.003 |
+| Diode | C2128 | 200 | $1.78 |
 
 Some notes about my order and costs:
 - PCB cost $19.60 in total for 5 boards.
