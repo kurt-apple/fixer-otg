@@ -1,0 +1,53 @@
+### Footprint positions - created on 2024-08-10T00:58:40-0700 ###
+### Printed by KiCad version 8.0.4
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                      Package                                   PosX       PosY       Rot  Side
+C1        100nF                    C_0402_1005Metric                     121.0338   -83.3714  -26.0000  top
+C2        100nF                    C_0402_1005Metric                     125.0000   -86.0000  -26.0000  top
+D1        D_Small                  D_SOD-323                              67.7073   -74.1527   90.0000  top
+D2        D_Small                  D_SOD-323                              67.7073   -91.3527   90.0000  top
+D3        D_Small                  D_SOD-323                              70.7073  -108.5527   90.0000  top
+D4        D_Small                  D_SOD-323                              88.5573   -56.9527   90.0000  top
+D5        D_Small                  D_SOD-323                              81.6073   -56.9527   90.0000  top
+D6        D_Small                  D_SOD-323                              74.6573   -74.1527   90.0000  top
+D7        D_Small                  D_SOD-323                              74.6573   -91.3527   90.0000  top
+D8        D_Small                  D_SOD-323                              74.6573  -108.5527   90.0000  top
+D9        D_Small                  D_SOD-323                             102.4573   -74.1527   90.0000  top
+D10       D_Small                  D_SOD-323                              81.6073   -74.1527   90.0000  top
+D11       D_Small                  D_SOD-323                              81.6073   -91.3527   90.0000  top
+D12       D_Small                  D_SOD-323                              81.6073  -108.5527   90.0000  top
+D13       D_Small                  D_SOD-323                             102.4573   -91.3527   90.0000  top
+D14       D_Small                  D_SOD-323                              88.5573   -74.1527   90.0000  top
+D15       D_Small                  D_SOD-323                              88.5573   -91.3527   90.0000  top
+D16       D_Small                  D_SOD-323                              88.5573  -108.5527   90.0000  top
+D17       D_Small                  D_SOD-323                             109.4073   -91.3527   90.0000  top
+D18       D_Small                  D_SOD-323                              95.5073   -74.1527   90.0000  top
+D19       D_Small                  D_SOD-323                              95.5073   -91.3527   90.0000  top
+D20       D_Small                  D_SOD-323                              95.5073  -108.5527   90.0000  top
+D21       D_Small                  D_SOD-323                             112.8274   -96.3536   38.0000  top
+D22       D_Small                  D_SOD-323                             133.3984   -94.6090   38.0000  top
+D23       D_Small                  D_SOD-323                             119.8447  -105.1984   38.0000  top
+D24       D_Small                  D_SOD-323                             106.2909  -115.7877   38.0000  top
+D25       D_Small                  D_SOD-323                             115.5658   -99.7217   38.0000  top
+D26       D_Small                  D_SOD-323                             137.6773  -100.0857   38.0000  top
+D27       D_Small                  D_SOD-323                             124.1235  -110.6750   38.0000  top
+D28       D_Small                  D_SOD-323                             110.5697  -121.2644   38.0000  top
+D29       D_Small                  D_SOD-323                             129.1196   -89.1323   38.0000  top
+D30       D_Small                  D_SOD-323                             141.9561  -105.5623   38.0000  top
+D31       D_Small                  D_SOD-323                             128.4024  -116.1517   38.0000  top
+D32       D_Small                  D_SOD-323                             114.8486  -126.7411   38.0000  top
+D33       D_Small                  D_SOD-323                             148.2311   -90.4963   38.0000  top
+D34       D_Small                  D_SOD-323                             146.2350  -111.0390   38.0000  top
+D35       D_Small                  D_SOD-323                             132.6812  -121.6284   38.0000  top
+D36       D_Small                  D_SOD-323                             119.1274  -132.2178   38.0000  top
+D37       D_Small                  D_SOD-323                             152.5099   -95.9730   38.0000  top
+D38       D_Small                  D_SOD-323                             150.5138  -116.5157   38.0000  top
+D39       D_Small                  D_SOD-323                             136.9601  -127.1051   38.0000  top
+D40       D_Small                  D_SOD-323                             123.4063  -137.6944   38.0000  top
+J1        USB_C_Receptacle_USB2.0  USB_C_Receptacle_HRO_TYPE-C-31-M-12   124.1024   -73.1610  180.0000  top
+R1        5.1k                     R_0402_1005Metric                     129.0000   -81.8240  -26.0000  top
+R2        5.1k                     R_0402_1005Metric                     114.0000   -73.5000  -26.0000  top
+R3        10k                      R_0402_1005Metric                     112.5000   -76.5000  -26.0000  top
+U1        CH552T                   TSSOP-20_4.4x6.5mm_P0.65mm            107.9299  -103.9600  -26.0000  top
+## End

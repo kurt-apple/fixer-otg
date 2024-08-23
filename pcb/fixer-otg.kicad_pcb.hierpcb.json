@@ -1,0 +1,135 @@
+{
+  "subpcb": {
+    "fixer-otg.kicad_pcb": {
+      "anchor": "D20"
+    },
+    "switch_module.kicad_pcb": {
+      "anchor": "SW22"
+    }
+  },
+  "sheet": {
+    "": {
+      "checked": false
+    },
+    "/0689942a-2908-466f-9d5d-4b744c557b71": {
+      "checked": true
+    },
+    "/07210b24-017d-4640-9e42-f20c247de4b5": {
+      "checked": true
+    },
+    "/07514c3b-eee7-4fc2-8316-c6b5d58e084a": {
+      "checked": true
+    },
+    "/07703452-a68b-4f93-bec7-81261e8b3001": {
+      "checked": true
+    },
+    "/0eaee5b1-11e0-44a4-a1a1-ef9a88f4d403": {
+      "checked": true
+    },
+    "/0f925b51-2a82-4d79-b7c0-67e5628cdf61": {
+      "checked": true
+    },
+    "/1a0ed8dd-7748-45d4-aade-84e6d7b5db4e": {
+      "checked": true
+    },
+    "/230a46a6-3d46-47da-976a-3d2692e2c826": {
+      "checked": true
+    },
+    "/23db8119-fc48-41fd-b44a-c59a5e1e45d8": {
+      "checked": true
+    },
+    "/279bc50b-a3e4-4448-bed8-8a3d83b92f60": {
+      "checked": true
+    },
+    "/2a3d83bd-83b4-4779-9980-dae5ddffa077": {
+      "checked": true
+    },
+    "/2f44a3c1-4506-416a-b377-5891d675b808": {
+      "checked": true
+    },
+    "/35bd538e-f0a2-47d3-9c27-e4d1513bd45c": {
+      "checked": true
+    },
+    "/36e4df03-3915-4eeb-8434-d3da111bd0c4": {
+      "checked": true
+    },
+    "/3836fae0-5852-4427-8e0c-ec6535ee78b7": {
+      "checked": true
+    },
+    "/59bab4b0-d5b0-4e0e-b0aa-bd9900ef79f2": {
+      "checked": true
+    },
+    "/5f21a9d8-da08-43f6-a78e-f7b3f96b6203": {
+      "checked": true
+    },
+    "/6a96d807-6a21-48a7-8a60-d31df1d8ab26": {
+      "checked": true
+    },
+    "/6f7954f7-8bb9-4fe3-8067-50f33cecc87a": {
+      "checked": true
+    },
+    "/77461999-98ba-4350-bc89-add1b50483ca": {
+      "checked": true
+    },
+    "/816ba69d-81c5-41b8-9185-291d50cde6d9": {
+      "checked": true
+    },
+    "/99857c98-6740-4548-ac73-cc813d58b508": {
+      "checked": true
+    },
+    "/a5b5b79c-9299-47b7-960b-d2701ccab99f": {
+      "checked": true
+    },
+    "/adfac233-7590-4d27-9d78-09aa59390ab6": {
+      "checked": true
+    },
+    "/b303148d-4674-4ce5-858b-7a4f4d410273": {
+      "checked": true
+    },
+    "/babc532e-9892-4e72-84d9-48e8d0ba568d": {
+      "checked": true
+    },
+    "/bec26f14-a34b-4fec-a15a-6be413470ee7": {
+      "checked": true
+    },
+    "/bf1e45ca-f52d-4f5a-aaf0-509719ce60db": {
+      "checked": true
+    },
+    "/c2092800-b459-42a3-9f2f-b9cba8a6d28c": {
+      "checked": true
+    },
+    "/c60852d1-76a1-4c97-b9e5-2ec62dda08f1": {
+      "checked": true
+    },
+    "/cb999def-6282-44be-830e-fff57714cf56": {
+      "checked": true
+    },
+    "/cc607753-7474-4f21-bc56-49e048a45b79": {
+      "checked": true
+    },
+    "/cff8a7e4-f976-43b6-88be-8a9f6d144ce9": {
+      "checked": true
+    },
+    "/d975c5b0-44c5-43a4-ab6c-9173727d869b": {
+      "checked": true
+    },
+    "/d9e25760-b426-4e05-b6fb-0ababc5ff606": {
+      "checked": true
+    },
+    "/dabda3cd-6833-4f80-a3d9-4e035d42777b": {
+      "checked": true
+    },
+    "/e49cacad-9b8d-4c2b-822c-0ea14317fabf": {
+      "checked": true
+    },
+    "/e637fbb0-f494-4101-a54d-f22389b54adc": {
+      "checked": true
+    },
+    "/f06f06db-65e1-43d3-87f6-9881c251ee2b": {
+      "checked": true
+    },
+    "/f1edd208-86c1-4304-8bfa-f1034bad4caa": {
+      "checked": true
+    }
+  }
+}

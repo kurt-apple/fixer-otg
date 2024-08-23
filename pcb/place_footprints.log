@@ -1,0 +1,283 @@
+08-09 00:30:51 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 647:Plugin executed on: 'linux'
+08-09 00:30:51 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 648:Plugin executed with python version: '3.12.4 (main, Jun  7 2024, 06:33:07) [GCC 14.1.1 20240522]'
+08-09 00:30:51 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 649:KiCad build version: 8.0.4
+08-09 00:30:51 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 650:Plugin version: 3.0.0
+08-09 00:30:51 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 651:Frame repr: <wx._core.Frame object at 0x77791d2bdbe0>
+08-09 00:33:03 hierpcb 49:Plugin v0.0.1 running on KiCad 8.0.4 and Python 3.12.4 (main, Jun  7 2024, 06:33:07) [GCC 14.1.1 20240522] on linux.
+08-09 00:33:03 hierpcb 29:Imported /home/dev/Documents/fixer-otg/switch_module.kicad_pcb, with 2 footprints, 0 tracks, and 0 drawings.
+08-09 00:33:03 hierpcb 29:Imported /home/dev/Documents/fixer-otg/fixer-otg.kicad_pcb, with 97 footprints, 0 tracks, and 0 drawings.
+08-09 00:33:03 hierpcb 59:Root (+ PCB /home/dev/Documents/fixer-otg/fixer-otg.kicad_pcb)
+├─ 0cdf8356
+│  ├─ Switch Module1 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module8 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module3 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module2 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module10 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module5 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module6 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module4 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module9 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module7 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+├─ 3002fa37
+│  ├─ Switch Module1 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module8 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module3 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module2 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module10 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module5 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module6 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module4 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module9 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module7 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+├─ 359444d5
+│  ├─ Switch Module1 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module8 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module3 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module2 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module10 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module5 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module6 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module4 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module9 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module7 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+├─ 55f8ea73
+│  ├─ Switch Module1 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module8 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module3 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module2 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module10 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module5 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module6 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module4 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module9 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+│  ├─ Switch Module7 (+ PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb)
+08-09 00:33:03 hierpcb 61:PCB /home/dev/Documents/fixer-otg/switch_module.kicad_pcb
+  /5c67bb89: D20
+  /69e13807: SW22
+08-09 00:33:03 hierpcb 61:PCB /home/dev/Documents/fixer-otg/fixer-otg.kicad_pcb
+  /3002fa37/168a6f12/69e13807: SW42
+  /3002fa37/66632158/69e13807: SW41
+  /3002fa37/5833182f/69e13807: SW40
+  /3002fa37/d825e214/69e13807: SW39
+  /3002fa37/9e555708/69e13807: SW38
+  /3002fa37/d7c38976/69e13807: SW37
+  /3002fa37/92aa1714/69e13807: SW36
+  /3002fa37/f26cebd6/69e13807: SW35
+  /3002fa37/1b9e7fcb/69e13807: SW34
+  /3002fa37/f2a3bea2/69e13807: SW33
+  /55f8ea73/168a6f12/69e13807: SW32
+  /55f8ea73/66632158/69e13807: SW31
+  /55f8ea73/5833182f/69e13807: SW30
+  /55f8ea73/d825e214/69e13807: SW29
+  /55f8ea73/9e555708/69e13807: SW28
+  /55f8ea73/d7c38976/69e13807: SW27
+  /55f8ea73/92aa1714/69e13807: SW26
+  /55f8ea73/f26cebd6/69e13807: SW25
+  /55f8ea73/1b9e7fcb/69e13807: SW24
+  /55f8ea73/f2a3bea2/69e13807: SW23
+  /0cdf8356/168a6f12/69e13807: SW22
+  /0cdf8356/66632158/69e13807: SW21
+  /0cdf8356/5833182f/69e13807: SW20
+  /0cdf8356/d825e214/69e13807: SW19
+  /0cdf8356/9e555708/69e13807: SW18
+  /0cdf8356/d7c38976/69e13807: SW17
+  /0cdf8356/92aa1714/69e13807: SW16
+  /0cdf8356/f26cebd6/69e13807: SW15
+  /0cdf8356/1b9e7fcb/69e13807: SW14
+  /0cdf8356/f2a3bea2/69e13807: SW13
+  /359444d5/92aa1714/69e13807: SW12
+  /359444d5/f26cebd6/69e13807: SW11
+  /359444d5/1b9e7fcb/69e13807: SW10
+  /359444d5/f2a3bea2/69e13807: SW9
+  /359444d5/d7c38976/69e13807: SW8
+  /359444d5/9e555708/69e13807: SW7
+  /359444d5/d825e214/69e13807: SW6
+  /359444d5/5833182f/69e13807: SW5
+  /359444d5/66632158/69e13807: SW4
+  /359444d5/168a6f12/69e13807: SW3
+  /3002fa37/168a6f12/5c67bb89: D40
+  /3002fa37/66632158/5c67bb89: D39
+  /3002fa37/5833182f/5c67bb89: D38
+  /3002fa37/d825e214/5c67bb89: D37
+  /3002fa37/9e555708/5c67bb89: D36
+  /3002fa37/d7c38976/5c67bb89: D35
+  /3002fa37/92aa1714/5c67bb89: D34
+  /3002fa37/f26cebd6/5c67bb89: D33
+  /3002fa37/1b9e7fcb/5c67bb89: D32
+  /3002fa37/f2a3bea2/5c67bb89: D31
+  /55f8ea73/168a6f12/5c67bb89: D30
+  /55f8ea73/66632158/5c67bb89: D29
+  /55f8ea73/5833182f/5c67bb89: D28
+  /55f8ea73/d825e214/5c67bb89: D27
+  /55f8ea73/9e555708/5c67bb89: D26
+  /55f8ea73/d7c38976/5c67bb89: D25
+  /55f8ea73/92aa1714/5c67bb89: D24
+  /55f8ea73/f26cebd6/5c67bb89: D23
+  /55f8ea73/1b9e7fcb/5c67bb89: D22
+  /55f8ea73/f2a3bea2/5c67bb89: D21
+  /0cdf8356/168a6f12/5c67bb89: D20
+  /0cdf8356/66632158/5c67bb89: D19
+  /0cdf8356/5833182f/5c67bb89: D18
+  /0cdf8356/d825e214/5c67bb89: D17
+  /0cdf8356/9e555708/5c67bb89: D16
+  /0cdf8356/d7c38976/5c67bb89: D15
+  /0cdf8356/92aa1714/5c67bb89: D14
+  /0cdf8356/f26cebd6/5c67bb89: D13
+  /0cdf8356/1b9e7fcb/5c67bb89: D12
+  /0cdf8356/f2a3bea2/5c67bb89: D11
+  /359444d5/92aa1714/5c67bb89: D10
+  /359444d5/f26cebd6/5c67bb89: D9
+  /359444d5/1b9e7fcb/5c67bb89: D8
+  /359444d5/f2a3bea2/5c67bb89: D7
+  /359444d5/d7c38976/5c67bb89: D6
+  /359444d5/9e555708/5c67bb89: D5
+  /359444d5/d825e214/5c67bb89: D4
+  /359444d5/5833182f/5c67bb89: D3
+  /359444d5/66632158/5c67bb89: D2
+  /359444d5/168a6f12/5c67bb89: D1
+  /d6331dbc: H7
+  /d87dee5f: H2
+  /6137c973: SW2
+  /8932abea: SW1
+  /743de212: H6
+  /95db771f: H4
+  /27b670f9: U1
+  /f74e57d6: C2
+  /6e4da6ad: R3
+  /4ef15358: H5
+  /bb77afb1: R1
+  /b8fd3522: H8
+  /e13046cb: J1
+  /bc9d831b: H3
+  /18b5dcd1: R2
+  /8b0c3b26: C1
+  /cef5abdd: H1
+08-09 00:33:07 hierpcb 68:Saved.
+08-09 00:51:12 hierpcb 49:Plugin v0.0.1 running on KiCad 8.0.4 and Python 3.12.4 (main, Jun  7 2024, 06:33:07) [GCC 14.1.1 20240522] on linux.
+08-09 00:51:12 hierpcb 29:Imported /home/dev/Documents/fixer-otg/row1.kicad_pcb, with 20 footprints, 22 tracks, and 0 drawings.
+08-09 00:51:12 hierpcb 29:Imported /home/dev/Documents/fixer-otg/fixer-otg.kicad_pcb, with 97 footprints, 0 tracks, and 0 drawings.
+08-09 00:51:12 hierpcb 59:Root (+ PCB /home/dev/Documents/fixer-otg/fixer-otg.kicad_pcb)
+├─ Row2 (+ PCB /home/dev/Documents/fixer-otg/row1.kicad_pcb)
+├─ Row4 (+ PCB /home/dev/Documents/fixer-otg/row1.kicad_pcb)
+├─ Row1 (+ PCB /home/dev/Documents/fixer-otg/row1.kicad_pcb)
+├─ Row3 (+ PCB /home/dev/Documents/fixer-otg/row1.kicad_pcb)
+08-09 00:51:12 hierpcb 61:PCB /home/dev/Documents/fixer-otg/row1.kicad_pcb
+  /3514b29d: D3
+  /94746982: D6
+  /648deb70: SW1
+  /475fe5e0: D9
+  /bf6b1958: D4
+  /31516e0b: D1
+  /c1faff4b: SW10
+  /1f0db338: SW6
+  /6c2de9db: SW3
+  /7c0345ac: SW8
+  /f9142064: D7
+  /74fb1319: D2
+  /0b368496: D10
+  /8eae03df: D8
+  /e7b958c1: SW5
+  /ba5fc6b5: SW4
+  /0ecacbf1: D5
+  /8cc10bf1: SW9
+  /f69c54ff: SW2
+  /c47f889d: SW7
+08-09 00:51:12 hierpcb 61:PCB /home/dev/Documents/fixer-otg/fixer-otg.kicad_pcb
+  /0cdf8356/f69c54ff: SW4
+  /d6331dbc: H7
+  /55f8ea73/0b368496: D30
+  /55f8ea73/74fb1319: D22
+  /0cdf8356/475fe5e0: D9
+  /d87dee5f: H2
+  /3002fa37/94746982: D36
+  /55f8ea73/94746982: D26
+  /0cdf8356/c1faff4b: SW12
+  /55f8ea73/e7b958c1: SW27
+  /3002fa37/3514b29d: D33
+  /0cdf8356/648deb70: SW3
+  /55f8ea73/8cc10bf1: SW31
+  /359444d5/31516e0b: D11
+  /0cdf8356/7c0345ac: SW10
+  /6137c973: SW2
+  /3002fa37/1f0db338: SW38
+  /3002fa37/bf6b1958: D34
+  /55f8ea73/7c0345ac: SW30
+  /359444d5/e7b958c1: SW17
+  /359444d5/94746982: D16
+  /55f8ea73/31516e0b: D21
+  /359444d5/f69c54ff: SW14
+  /0cdf8356/c47f889d: SW9
+  /8932abea: SW1
+  /55f8ea73/1f0db338: SW28
+  /359444d5/8eae03df: D18
+  /359444d5/c47f889d: SW19
+  /743de212: H6
+  /95db771f: H4
+  /3002fa37/ba5fc6b5: SW36
+  /359444d5/475fe5e0: D19
+  /359444d5/ba5fc6b5: SW16
+  /359444d5/3514b29d: D13
+  /359444d5/0b368496: D20
+  /3002fa37/648deb70: SW33
+  /55f8ea73/ba5fc6b5: SW26
+  /27b670f9: U1
+  /55f8ea73/0ecacbf1: D25
+  /f74e57d6: C2
+  /3002fa37/0b368496: D40
+  /55f8ea73/bf6b1958: D24
+  /55f8ea73/6c2de9db: SW25
+  /0cdf8356/8cc10bf1: SW11
+  /0cdf8356/6c2de9db: SW5
+  /6e4da6ad: R3
+  /55f8ea73/c47f889d: SW29
+  /3002fa37/c47f889d: SW39
+  /55f8ea73/3514b29d: D23
+  /55f8ea73/f69c54ff: SW24
+  /0cdf8356/8eae03df: D8
+  /0cdf8356/1f0db338: SW8
+  /359444d5/7c0345ac: SW20
+  /55f8ea73/f9142064: D27
+  /4ef15358: H5
+  /3002fa37/e7b958c1: SW37
+  /0cdf8356/f9142064: D7
+  /359444d5/6c2de9db: SW15
+  /3002fa37/c1faff4b: SW42
+  /3002fa37/6c2de9db: SW35
+  /359444d5/bf6b1958: D14
+  /bb77afb1: R1
+  /3002fa37/31516e0b: D31
+  /359444d5/c1faff4b: SW22
+  /3002fa37/0ecacbf1: D35
+  /359444d5/f9142064: D17
+  /3002fa37/8eae03df: D38
+  /359444d5/8cc10bf1: SW21
+  /0cdf8356/ba5fc6b5: SW6
+  /55f8ea73/648deb70: SW23
+  /0cdf8356/31516e0b: D1
+  /55f8ea73/c1faff4b: SW32
+  /b8fd3522: H8
+  /3002fa37/f9142064: D37
+  /e13046cb: J1
+  /3002fa37/7c0345ac: SW40
+  /359444d5/0ecacbf1: D15
+  /bc9d831b: H3
+  /359444d5/648deb70: SW13
+  /18b5dcd1: R2
+  /359444d5/74fb1319: D12
+  /8b0c3b26: C1
+  /359444d5/1f0db338: SW18
+  /cef5abdd: H1
+  /0cdf8356/e7b958c1: SW7
+  /3002fa37/475fe5e0: D39
+  /0cdf8356/0b368496: D10
+  /0cdf8356/bf6b1958: D4
+  /55f8ea73/475fe5e0: D29
+  /0cdf8356/0ecacbf1: D5
+  /3002fa37/8cc10bf1: SW41
+  /3002fa37/74fb1319: D32
+  /0cdf8356/3514b29d: D3
+  /3002fa37/f69c54ff: SW34
+  /0cdf8356/74fb1319: D2
+  /55f8ea73/8eae03df: D28
+  /0cdf8356/94746982: D6
+08-09 00:51:19 hierpcb 68:Saved.

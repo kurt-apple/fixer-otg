@@ -1,10 +1,12 @@
 # Todos
-- Validate ergogen.yml
-- Add keys and customize layout in ergogen
+- Finish firmware rev1
+- Test switch pads
+- Solder one prototype
+- Practice with layout
 
 # Project goals
 - Surface mount switches
-- Crude USB switch
+- Crude USB host switcher
 - Make sure ports are spaced apart
 - Able to thumb type as well as normal type
 - Trackball 
