@@ -36,8 +36,11 @@ To open the design I am using currently, please open the main `kicad_pcb` file t
 
 # BOM
 This is the BOM. Note that most PCB prototype services have a minimum order quantity of around 5.
-|  Comment | | CPCB Part # | QTY | Price 5 Boards |
-|---|---|---|---|
+|  Comment | JLCPCB Part # | QTY | Price 5 Boards |
+|---|---|---| --- |
 | USB C Port | C165948 | 5 | $0.779 |
 | CH552T | C111367 | 5 | $2.543 |
-|   |   |   |   |
+| 100nF Capacitor | C1525 | 10 | 0.012 |
+| 5.1k Resistor | C25905 | 10 | 0.005 |
+| 10k Resistor | C25744 | 5 | 0.003 |
+| Diode | C2128 | 200 | 1.78 |
