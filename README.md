@@ -27,8 +27,8 @@ To open the design I am using currently, please open the main `kicad_pcb` file t
 - Get yourself some Kailh Mute Micro Switches (42x)
 - Fork my FAK repo for the firmware code, and modify however much you wish.
 - Gather your soldering supplies
-- My provided manufacturing files (gerber, drilling, BOM) are specifically for JLCPCB. If you want to print them at a different company you might have to output your own manufacturing files.
-- All but the switches are PCBA.
+- My provided manufacturing files (gerber, drilling, BOM) are specifically for JLCPCB. If you want to print them at a different company you might have to output your own manufacturing files. Please note that there were a few minor corrections/alterations JLC made before finalizing their production file and proceeding to manufacturing. I am new at this - your experience may vary.
+- All but the switches are placed/assembled by JLC.
 - Receive your board(s)
 - Recommended: flash firmware and short out each key by hand to make sure the keys work
 - Solder the mute switches to each pad
@@ -44,3 +44,9 @@ This is the BOM. Note that most PCB prototype services have a minimum order quan
 | 5.1k Resistor | C25905 | 10 | 0.005 |
 | 10k Resistor | C25744 | 5 | 0.003 |
 | Diode | C2128 | 200 | 1.78 |
+
+Some notes about my order and costs:
+- PCB cost $19.60 in total for 5 boards.
+- assembly cost $21.96 for 5 boards.
+- shipping from JLC cost $22.80 to USA.
+- the cost for switches varies widely; I bought from Kailh directly however Alibaba/Aliexpress have bulk lots of Kailh Micro switches for much cheaper.
