@@ -15,7 +15,7 @@ The intent is to use these schematics (bunchiez40, pusheenz40, and idawgz32) as 
 - I've got my eyes set on a few display modules and I am interested in designing a CM4 carrier or picking another small SBC to dedicate to the project.
 
 # Navigating the KiCad Files
-I used a plugin called "Hierarchical-PCB" which allowed me to define a subcircuit in separate `kicad_pcb` files, then copy the layout specified in that `kicad_pcb` file whenever a hierarchical sheet of the same name is placed in the schematic of another PCB.
+I used a plugin called "Hierarchical-PCB" which allowed me to define a subcircuit for `switch_module` in separate `kicad_pcb` and `kicad_sch` files, then copy the layout specified in that `kicad_pcb` file whenever a hierarchical sheet of the same name is placed in the schematic of another PCB. The `switch_module` contains through-holes, diode positioning, and the necessary tracks for a single key.
 
 > [!Warning]
 > "Hierarchical-PCB" does not yet support nested hierarchical sheets. I forked the project and I want to try to add this support at a later date. Nevertheless, this plugin was VERY helpful in both making the schematic visually less noisy and also in quickly laying out tedious portions of the keyboard PCB.
