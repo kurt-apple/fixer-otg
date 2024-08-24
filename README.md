@@ -32,7 +32,13 @@ To open the design I am using currently, please open the main `kicad_pcb` file t
 - Receive your board(s)
 - Recommended: flash firmware and short out each key by hand to make sure the keys work
 - Solder the mute switches to each pad
+- Flash the firmware (See dependencies section below)
 - Test it out
+
+# Dependencies
+- python
+- meson
+- sdcc
 
 # BOM
 This is the BOM. Note that most PCB prototype services have a minimum order quantity of around 5.
