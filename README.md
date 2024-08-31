@@ -1,8 +1,9 @@
 # fixer-otg
 - Fork of [ChrisChrisLoLo/pusheenz40](https://github.com/ChrisChrisLoLo/pusheenz40). Also gathered info from [idawgz32](https://github.com/ChrisChrisLoLo/idawgz32) and [bunchiez40](https://github.com/ChrisChrisLoLo/bunchiez40).
 - Layout is all-new, and design emphasizes ultra portable, small form factor while still having a fairly sane key map.
+- Encased in epoxy for maximum durability and true pocketability
 - Blog posts hosted on [Obsidian Publish](https://publish.obsidian.md/kurt/Maps/Fixer+OTG).
-- SHOWCASE MEDIA is [here!](https://publish.obsidian.md/kurt/Pages/Fixer+OTG/Fixer+OTG+-+Showcase)
+- **SHOWCASE MEDIA** is [here!](https://publish.obsidian.md/kurt/Pages/Fixer+OTG/Fixer+OTG+-+Showcase)
 - FAK Firmware is [here!](https://github.com/kurt-apple/fak)
 
 ![Fixer OTG Keyboard](https://publish-01.obsidian.md/access/8b2b7ded77392cafca8921f0f087e9fb/dimensions.jpeg)
