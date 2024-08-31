@@ -5,7 +5,7 @@
 - SHOWCASE MEDIA is [here!](https://publish.obsidian.md/kurt/Pages/Fixer+OTG/Fixer+OTG+-+Showcase)
 - FAK Firmware is [here!](https://github.com/kurt-apple/fak)
 
-[![Thumbnail of Fixer OTG]([https://i.sstatic.net/Vp2cE.png](https://publish-01.obsidian.md/access/8b2b7ded77392cafca8921f0f087e9fb/dimensions.jpeg))](https://publish-01.obsidian.md/access/8b2b7ded77392cafca8921f0f087e9fb/assembled_carousel.mp4#t=0.001)
+![Fixer OTG Keyboard](https://publish-01.obsidian.md/access/8b2b7ded77392cafca8921f0f087e9fb/dimensions.jpeg)
 
 # Keyboard Design
 As a parent, I often find myself "nap-trapped" but still needing to do computer work. After trying several Android touchscreen keyboards I have concluded that my fingers are not up for the task anymore. However, I still require a handheld form factor. More recently I spotted the uConsole from ClockworkPi and while it looks neat, I reason that if I have to wait many months to receive one, I might as well challenge myself to DIY. What could go wrong? 
