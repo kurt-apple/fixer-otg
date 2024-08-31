@@ -2,6 +2,7 @@
 - Fork of [ChrisChrisLoLo/pusheenz40](https://github.com/ChrisChrisLoLo/pusheenz40). Also gathered info from [idawgz32](https://github.com/ChrisChrisLoLo/idawgz32) and [bunchiez40](https://github.com/ChrisChrisLoLo/bunchiez40).
 - Layout is all-new, and design emphasizes ultra portable, small form factor while still having a fairly sane key map.
 - Blog posts hosted on [Obsidian Publish](https://publish.obsidian.md/kurt/Maps/Fixer+OTG).
+- SHOWCASE MEDIA is [here!](https://publish.obsidian.md/kurt/Pages/Fixer+OTG/Fixer+OTG+-+Showcase)
 - FAK Firmware is [here!](https://github.com/kurt-apple/fak)
 
 # Keyboard Design
