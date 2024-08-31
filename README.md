@@ -35,9 +35,12 @@ To open the design I am using currently, please open the main `kicad_pcb` file t
 - My provided manufacturing files (gerber, drilling, BOM) are specifically for JLCPCB. If you want to print them at a different company you might have to output your own manufacturing files. Please note that there were a few minor corrections/alterations JLC made before finalizing their production file and proceeding to manufacturing. I am new at this - your experience may vary.
 - All but the switches are placed/assembled by JLC.
 - Receive your board(s)
-- Recommended: flash firmware and short out each key by hand to make sure the keys work
-- Solder the mute switches to each pad
-- Flash the firmware (See dependencies section below)
+- Recommended: flash firmware and short out each key by hand to make sure the keys work.
+- Clone or fork the firmware repo and read code/make any customizations as you wish.
+- `python fak.py compile -kb fixer-otg`
+- plug in the board while holding the BOOT key (left of usb port)
+- `python fak.py flash -kb fixer-otg`
+- Solder the mute switches to each pad if you haven't done so already. Seal bottom of switches if you plan to epoxy (at your own risk!)
 - Test it out
 
 # Firmware Dependencies (Arch)
