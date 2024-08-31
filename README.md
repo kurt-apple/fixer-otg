@@ -13,9 +13,9 @@ As a parent, I often find myself "nap-trapped" but still needing to do computer 
 The intent is to use these schematics (bunchiez40, pusheenz40, and idawgz32) as a launching-off point for an ambitious, DIY pocket keyboard, which will later evolve into a "deck" or "pocket" pc. Some requirements are currently listed in the [TODOs](TODO.md).
 
 # Status
-- prototype keyboard PCBs were ordered and will arrive Aug 23
-- A rough-draft custom layout for the oddly shaped keyboard is done; Lots of fine-tuning to do.
-- I've got my eyes set on a few display modules and I am interested in designing a CM4 carrier or picking another small SBC to dedicate to the project.
+- prototype keyboard PCBs were ordered and arrived Aug 23
+- Layout and firmware are made and I can achieve ~22 WPM on this layout!
+- I've got my eyes set on a few display modules and I am interested in designing a CM4 carrier or picking another small SBC to dedicate to the cyberdeck project.
 
 # Navigating the KiCad Files
 I used a plugin called "Hierarchical-PCB" which allowed me to define a subcircuit for `switch_module` in separate `kicad_pcb` and `kicad_sch` files, then copy the layout specified in that `kicad_pcb` file whenever a hierarchical sheet of the same name is placed in the schematic of another PCB. The `switch_module` contains through-holes, diode positioning, and the necessary tracks for a single key.
