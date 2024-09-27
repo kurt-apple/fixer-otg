@@ -15,7 +15,7 @@ As a parent, I often find myself "nap-trapped" but still needing to do computer 
 The intent is to use these schematics (bunchiez40, pusheenz40, and idawgz32) as a launching-off point for an ambitious, DIY pocket keyboard, which will later evolve into a "deck" or "pocket" pc. Some requirements are currently listed in the [TODOs](TODO.md).
 
 # Status
-- prototype keyboard PCBs were ordered and arrived Aug 23
+- prototype keyboard PCBs were ordered, arrived, I broke board 1 and board 2 is alive and well!
 - Layout and firmware are made and I can achieve ~22 WPM on this layout!
 - I've got my eyes set on a few display modules and I am interested in designing a CM4 carrier or picking another small SBC to dedicate to the cyberdeck project.
 
