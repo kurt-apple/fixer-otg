@@ -51,35 +51,80 @@ def left_and_right(abbreviation, lkeycode, rkeycode = None):
         Chord((KC.R, abbreviation), rkeycode)
     ]
 
-KCA_LSFT = KC.HT(KC.A, KC.LSFT)
-KCL_LSFT = KC.HT(KC.L, KC.LSFT)
+_★A_LSFT   = KC.HT(KC.A,   KC.LSFT)
+_★R_LSFT   = KC.HT(KC.R,   KC.LSFT)
+_★SPC_LCMD = KC.HT(KC.SPC, KC.LCMD)
+_★C_LALT   = KC.HT(KC.C,   KC.LALT)
+_★H_MO2    = KC.HT(KC.H,   KC.MO(2))
+_★ENT_MO3  = KC.HT(KC.ENT, KC.MO(3))
 
 combos.combos = [
-    Chord((KC.S, KCL_LSFT), KC.SCLN),
-    Chord((KC.C, KCL_LSFT), KC.COLN),
+    Chord((KC.S, KC.L), KC.SCLN), # ;
+    Chord((KC.C, KC.L), KC.COLN), # :
+    Chord((KC.E, KC.Q), KC.EQL), # =
+    Chord((KC.B, KC.S), KC.BSLS), # \|
+    Chord((KC.D, KC.Q), KC.DQUO), # "
+    Chord((KC.S, KC.Q), KC.QUOT), # '
+    Chord((KC.T, KC.B), KC.TAB), # '    '
+    Chord((KC.E, KC.X), KC.EXLM),
+    Chord((KC.A, KC.T), KC.AT), # @
+    Chord((KC.O, KC.C), KC.POUND),
+    Chord((KC.A, KC.M), KC.AMPR),
+    Chord((KC.A, KC.E, KC.I, KC.U), KC.MO(4)),
+    Chord((KC.I, KC.U), KC.TAB),
 ]
 
 combos.combos.extend(left_and_right(KC.A, KC.LEFT_ANGLE_BRACKET, KC.RIGHT_ANGLE_BRACKET))
-combos.combos.extend(left_and_right(KC.B, KC.LEFT_CURLY_BRACE, KC.RIGHT_CURLY_BRACE))
-combos.combos.extend(left_and_right(KC.P, KC.LEFT_PAREN, KC.RIGHT_PAREN))
-combos.combos.extend(left_and_right(KC.F, KC.LBRACKET, KC.RBRACKET))
+combos.combos.extend(left_and_right(KC.B, KC.LEFT_CURLY_BRACE,   KC.RIGHT_CURLY_BRACE))
+combos.combos.extend(left_and_right(KC.P, KC.LEFT_PAREN,         KC.RIGHT_PAREN))
+combos.combos.extend(left_and_right(KC.F, KC.LBRACKET,           KC.RBRACKET))
 
+ast = KC.KP_ASTERISK
+_ₓₓₓ_ = KC.None
+hidsw = KC.HID_SWITCH
+blerf = KC.BLE_REFRESH
 
-# base_layer = [
-#                 KC.Z,   KC.T,       KC.Y,   KC.Q,#3
-#         KC.O,   KC.W,   KC.J,       KC.D,   KC.F,   KC.G,#9
-# KC.H,   KC.E,   KC.I,   KC.U,       KC.R,   KC.S,   KC.N,   KC.P,#17
-# KC.A,   KC.COMM,KC.X,   KC.V,       KC.M,   KC.B,   KC.DOT, KC.L,#25
-# KC.C,           KC.HOME,KC.BSPC,    KC.SPC, KC.END,         KC.LCTL
-# ]
+# todos
 
 base_layer = [
-                    KC.Z,   KC.T,       KC.Y,   KC.Q,#3
-            KC.O,   KC.W,   KC.J,       KC.D,   KC.F,   KC.G,#9
-KC.H,       KC.E,   KC.I,   KC.U,       KC.R,   KC.S,   KC.N,   KC.P,#17
-KCA_LSFT,   KC.COMM,KC.X,   KC.V,       KC.M,   KC.B,   KC.DOT, KCL_LSFT,#25
-KC.C,               KC.HOME,KC.BSPC,    KC.SPC, KC.END,         KC.LCTL
+                   KC.Z,     KC.Q,            KC.Y,       KC.J,#3
+          KC.O,    KC.W,     KC.F,            KC.D,       KC.T,      KC.G,#9
+_★H_MO2,  KC.E,    KC.I,     KC.U,            KC.L,       KC.S,      KC.N,     KC.P,#17
+_★A_LSFT, KC.COMM, KC.X,     KC.V,            KC.M,       KC.B,      KC.DOT,   _★R_LSFT,#25
+_★C_LALT,          KC.BSPC,  KC.MO(1),        _★SPC_LCMD, _★ENT_MO3,           KC.LCTL
 ]
+
+num_layer = [
+                   KC.GRV,  KC.TILD,       KC.SLSH,    ast,
+          _ₓₓₓ_,   _ₓₓₓ_,   KC.DLR,        KC.N7,      KC.N8,     KC.N9,
+_ₓₓₓ_,    KC.PIPE, KC.CIRC, KC.PERC,       KC.N4,      KC.N5,     KC.N6,    KC.MINS,
+_ₓₓₓ_,    _ₓₓₓ_,   _ₓₓₓ_,   _ₓₓₓ_,         KC.N1,      KC.N2,     KC.N3,    KC.PLUS,
+_ₓₓₓ_,             _ₓₓₓ_,   _ₓₓₓ_,         _ₓₓₓ_,      KC.N0,               _ₓₓₓ_
+]
+
+nav_layer = [
+                 _ₓₓₓ_,  _ₓₓₓ_,         _ₓₓₓ_,     _ₓₓₓ_,
+          _ₓₓₓ_, _ₓₓₓ_,  KC.PGUP,       _ₓₓₓ_,    KC.UP,     _ₓₓₓ_,
+KC.ESC,   _ₓₓₓ_, _ₓₓₓ_,  KC.TAB,        KC.LEFT,  KC.DOWN,   KC.RIGHT, _ₓₓₓ_,
+_ₓₓₓ_,    _ₓₓₓ_, _ₓₓₓ_,  KC.PGDN,       _ₓₓₓ_,    KC.HOME,   KC.END,   _ₓₓₓ_,
+KC.TRNS,         _ₓₓₓ_,  _ₓₓₓ_,         _ₓₓₓ_,    _ₓₓₓ_,               _ₓₓₓ_
+]
+
+F_layer = [
+                 KC.INS, KC.PSCR,       KC.F10,   KC.F11,
+          _ₓₓₓ_, KC.LTCL,_ₓₓₓ_,         KC.F7,    KC.F8,     KC.F9,
+_ₓₓₓ_,    _ₓₓₓ_, _ₓₓₓ_,  _ₓₓₓ_,         KC.F4,    KC.F5,     KC.F6,    KC.ALT,
+_ₓₓₓ_,    _ₓₓₓ_, _ₓₓₓ_,  _ₓₓₓ_,         KC.F1,    KC.F2,     KC.F3,    _ₓₓₓ_,
+hidsw,           KC.DEL, _ₓₓₓ_,         _ₓₓₓ_,    KC.F12,              blerf
+]
+
+# macros = [
+#                  _ₓₓₓ_,  _ₓₓₓ_,         _ₓₓₓ_,    _ₓₓₓ_,
+#           _ₓₓₓ_, _ₓₓₓ_,  _ₓₓₓ_,         _ₓₓₓ_,    _ₓₓₓ_,     _ₓₓₓ_,
+# _ₓₓₓ_,    _ₓₓₓ_, _ₓₓₓ_,  _ₓₓₓ_,         _ₓₓₓ_,    _ₓₓₓ_,     _ₓₓₓ_,    _ₓₓₓ_,
+# _ₓₓₓ_,    _ₓₓₓ_, _ₓₓₓ_,  _ₓₓₓ_,         _ₓₓₓ_,    _ₓₓₓ_,     _ₓₓₓ_,    _ₓₓₓ_,
+# _ₓₓₓ_,           _ₓₓₓ_,  _ₓₓₓ_,         _ₓₓₓ_,    _ₓₓₓ_,               _ₓₓₓ_
+# ]
 
 def transpose(layer):
     return [
@@ -93,25 +138,20 @@ def transpose(layer):
 keyboard.keymap = [
 # BASE
 transpose(base_layer),
+# NUM
+transpose(num_layer),
 # # NAV
-# [
-# KC.TD(KC.NO, KC.RELOAD, tap_time=200), KC.TD(KC.NO, KC.NO, tap_time=200), KC.TD(KC.NO, KC.NO, tap_time=200), KC.TD(KC.NO, KC.NO, tap_time=200), KC.NO, KC.NO, KC.LSFT(KC.INS), KC.LCTL(KC.INS), KC.LSFT(KC.DEL), KC.NO,
-# KC.LGUI, KC.LALT, KC.LCTL, KC.LSFT, KC.NO, KC.TD(KC.NO, KC.CAPS, tap_time=200), KC.LEFT, KC.DOWN, KC.UP, KC.RGHT,
-# KC.NO, KC.RALT, KC.TD(KC.NO, KC.NO, tap_time=200), KC.TD(KC.NO, KC.NO, tap_time=200), KC.NO, KC.INS, KC.HOME, KC.PGDN, KC.PGUP, KC.END,
-# KC.NO, KC.NO, KC.NO, KC.NO, KC.NO, KC.ENT, KC.BSPC, KC.DEL, KC.NO, KC.NO
-# ],
-# # NUM
-# [
-# KC.LBRC, KC.N7, KC.N8, KC.N9, KC.RBRC, KC.NO, KC.TD(KC.NO, KC.NO, tap_time=200), KC.TD(KC.NO, KC.NO, tap_time=200), KC.TD(KC.NO, KC.NO, tap_time=200), KC.TD(KC.NO, KC.RELOAD, tap_time=200),
-# KC.SCLN, KC.N4, KC.N5, KC.N6, KC.EQL, KC.NO, KC.LSFT, KC.LCTL, KC.LALT, KC.LGUI,
-# KC.GRV, KC.N1, KC.N2, KC.N3, KC.BSLS, KC.NO, KC.TD(KC.NO, KC.NO, tap_time=200), KC.TD(KC.NO, KC.NO, tap_time=200), KC.RALT, KC.NO,
-# KC.NO, KC.STEPS, KC.DOT, KC.N0, KC.MINS, KC.NO, KC.NO, KC.NO, KC.NO, KC.NO
-# ],
-
+transpose(nav_layer),
+# MACROS
+# transpose(macros),
 ]
 
 layer_names_list = [
 "Base",
+"Num",
+"Nav",
+"F",
+# "MACRO"
 # "Nav", "Num",
 ]
 
