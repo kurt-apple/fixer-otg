@@ -43,32 +43,37 @@ split = Split(
 )
 keyboard.modules.append(split)
 
-_★A_LSFT   = KC.HT(KC.A,   KC.LSFT)
-_★R_LSFT   = KC.HT(KC.R,   KC.LSFT)
-_★SPC_LCMD = KC.HT(KC.SPC, KC.LCMD)
-_★C_LCTL   = KC.HT(KC.C,   KC.LCTL)
-_★H_MO2    = KC.HT(KC.H,   KC.MO(2))
-_★ENT_MO3  = KC.HT(KC.ENT, KC.MO(3))
-_★K_LALT   = KC.HT(KC.K,   KC.LALT)
-
 def left_and_right(abbreviation, lkeycode, rkeycode = None):
     if(rkeycode == None):
         rkeycode = lkeycode
     return [
         Chord((KC.L, abbreviation), lkeycode),
-        Chord((_★R_LSFT, abbreviation), rkeycode)
+        Chord((KC.R, abbreviation), rkeycode)
     ]
+
+knum = KC.MO(1)
+knav = KC.MO(2)
+kfnc = KC.MO(3)
+
+_★A_LSFT   = KC.HT(KC.A,   KC.LSFT)
+_★R_LSFT   = KC.HT(KC.R,   KC.LSFT)
+_★SPC_LCMD = KC.HT(KC.SPC, KC.LCMD)
+_★COMM_LCTL   = KC.HT(KC.COMM,   KC.LCTL)
+_★H_MO2    = KC.HT(KC.H,   knav)
+_★ENT_MO3  = KC.HT(KC.ENT, kfnc)
+_★DOT_LALT   = KC.HT(KC.DOT,   KC.LALT)
+_★ESC_MO1  = KC.HT(KC.ESC, knum)
 
 combos.combos = [
     Chord((KC.S,      KC.L), KC.SCLN), # ; #! works
-    Chord((_★C_LCTL, KC.L), KC.COLN), # : #! works, awkward
+    Chord((KC.C,      KC.L), KC.COLN), # : #! works, awkward
     Chord((KC.E,      KC.Q), KC.EQL), # = #! works
     Chord((KC.B,      KC.S), KC.BSLS), # \| #! works but a little awkward
     Chord((KC.D,      KC.Q), KC.DQUO), # " works
     Chord((KC.S,      KC.Q), KC.QUOT), # ' works
     Chord((KC.E,      KC.X), KC.EXLM), # works
-    Chord((_★A_LSFT, KC.T), KC.AT), # @ #! 
-    Chord((KC.T,      _★C_LCTL), KC.POUND), #! does not work
+    Chord((_★A_LSFT, KC.T), KC.AT), # @ #! does not work
+    Chord((KC.O,      KC.C), KC.POUND), #! does not work
     Chord((_★A_LSFT, KC.M), KC.AMPR), #! does not work
     Chord((_★A_LSFT, KC.E, KC.I, KC.U), KC.MO(4)), #! untested
     Chord((KC.I,      KC.U), KC.TAB),
@@ -89,8 +94,8 @@ base_layer = [
                         KC.Z,       KC.W,                   KC.Y,       KC.J,#3
             KC.O,       KC.Q,       KC.F,                   KC.D,       KC.T,      KC.G,#9
 _★H_MO2,   KC.E,       KC.I,       KC.U,                   KC.L,       KC.S,      KC.N,        KC.P,#17
-_★A_LSFT,  KC.COMM,    KC.X,       KC.V,                   KC.M,       KC.B,      KC.DOT,      _★R_LSFT,#25
-_★C_LCTL,              KC.BSPC,    KC.MO(1),               _★SPC_LCMD, _★ENT_MO3,            _★K_LALT 
+_★A_LSFT,  KC.C,       KC.X,       KC.V,                   KC.M,       KC.B,      KC.K,       _★R_LSFT,#25
+_★COMM_LCTL,           _★ESC_MO1,  KC.BSPC,               _★SPC_LCMD, _★ENT_MO3,            _★DOT_LALT 
 ]
 num_layer = [
                         KC.GRV,     KC.TILD,                KC.SLSH,    ast,        
@@ -112,7 +117,7 @@ F_layer = [
             _ₓₓₓ_,      KC.LCTL,    _ₓₓₓ_,                  KC.F7,      KC.F8,      KC.F9,
 _ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,                  KC.F4,      KC.F5,      KC.F6,      KC.LALT,
 _ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,                  KC.F1,      KC.F2,      KC.F3,      _ₓₓₓ_,
-hidsw,                  KC.DEL,     _ₓₓₓ_,                  _ₓₓₓ_,      KC.F12,                 blerf
+hidsw,                  KC.DEL,     KC.F12,                 _ₓₓₓ_,      _ₓₓₓ_,                  blerf
 ]
 
 # macros = [
