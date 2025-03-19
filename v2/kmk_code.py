@@ -43,35 +43,35 @@ split = Split(
 )
 keyboard.modules.append(split)
 
+_★A_LSFT   = KC.HT(KC.A,   KC.LSFT)
+_★R_LSFT   = KC.HT(KC.R,   KC.LSFT)
+_★SPC_LCMD = KC.HT(KC.SPC, KC.LCMD)
+_★C_LCTL   = KC.HT(KC.C,   KC.LCTL)
+_★H_MO2    = KC.HT(KC.H,   KC.MO(2))
+_★ENT_MO3  = KC.HT(KC.ENT, KC.MO(3))
+_★K_LALT   = KC.HT(KC.K,   KC.LALT)
+
 def left_and_right(abbreviation, lkeycode, rkeycode = None):
     if(rkeycode == None):
         rkeycode = lkeycode
     return [
         Chord((KC.L, abbreviation), lkeycode),
-        Chord((KC.R, abbreviation), rkeycode)
+        Chord((_★R_LSFT, abbreviation), rkeycode)
     ]
 
-_★A_LSFT   = KC.HT(KC.A,   KC.LSFT)
-_★R_LSFT   = KC.HT(KC.R,   KC.LSFT)
-_★SPC_LCMD = KC.HT(KC.SPC, KC.LCMD)
-_★C_LALT   = KC.HT(KC.C,   KC.LALT)
-_★H_MO2    = KC.HT(KC.H,   KC.MO(2))
-_★ENT_MO3  = KC.HT(KC.ENT, KC.MO(3))
-
 combos.combos = [
-    Chord((KC.S, KC.L), KC.SCLN), # ;
-    Chord((KC.C, KC.L), KC.COLN), # :
-    Chord((KC.E, KC.Q), KC.EQL), # =
-    Chord((KC.B, KC.S), KC.BSLS), # \|
-    Chord((KC.D, KC.Q), KC.DQUO), # "
-    Chord((KC.S, KC.Q), KC.QUOT), # '
-    Chord((KC.T, KC.B), KC.TAB), # '    '
-    Chord((KC.E, KC.X), KC.EXLM),
-    Chord((KC.A, KC.T), KC.AT), # @
-    Chord((KC.O, KC.C), KC.POUND),
-    Chord((KC.A, KC.M), KC.AMPR),
-    Chord((KC.A, KC.E, KC.I, KC.U), KC.MO(4)),
-    Chord((KC.I, KC.U), KC.TAB),
+    Chord((KC.S,      KC.L), KC.SCLN), # ; #! works
+    Chord((_★C_LCTL, KC.L), KC.COLN), # : #! works, awkward
+    Chord((KC.E,      KC.Q), KC.EQL), # = #! works
+    Chord((KC.B,      KC.S), KC.BSLS), # \| #! works but a little awkward
+    Chord((KC.D,      KC.Q), KC.DQUO), # " works
+    Chord((KC.S,      KC.Q), KC.QUOT), # ' works
+    Chord((KC.E,      KC.X), KC.EXLM), # works
+    Chord((_★A_LSFT, KC.T), KC.AT), # @ #! 
+    Chord((KC.T,      _★C_LCTL), KC.POUND), #! does not work
+    Chord((_★A_LSFT, KC.M), KC.AMPR), #! does not work
+    Chord((_★A_LSFT, KC.E, KC.I, KC.U), KC.MO(4)), #! untested
+    Chord((KC.I,      KC.U), KC.TAB),
 ]
 
 combos.combos.extend(left_and_right(KC.A, KC.LEFT_ANGLE_BRACKET, KC.RIGHT_ANGLE_BRACKET))
@@ -79,43 +79,40 @@ combos.combos.extend(left_and_right(KC.B, KC.LEFT_CURLY_BRACE,   KC.RIGHT_CURLY_
 combos.combos.extend(left_and_right(KC.P, KC.LEFT_PAREN,         KC.RIGHT_PAREN))
 combos.combos.extend(left_and_right(KC.F, KC.LBRACKET,           KC.RBRACKET))
 
-ast = KC.KP_ASTERISK
-_ₓₓₓ_ = KC.None
+ast = KC.ASTR
+_ₓₓₓ_ = KC.NO
 hidsw = KC.HID_SWITCH
 blerf = KC.BLE_REFRESH
 
 # todos
-
 base_layer = [
-                   KC.Z,     KC.Q,            KC.Y,       KC.J,#3
-          KC.O,    KC.W,     KC.F,            KC.D,       KC.T,      KC.G,#9
-_★H_MO2,  KC.E,    KC.I,     KC.U,            KC.L,       KC.S,      KC.N,     KC.P,#17
-_★A_LSFT, KC.COMM, KC.X,     KC.V,            KC.M,       KC.B,      KC.DOT,   _★R_LSFT,#25
-_★C_LALT,          KC.BSPC,  KC.MO(1),        _★SPC_LCMD, _★ENT_MO3,           KC.LCTL
+                        KC.Z,       KC.W,                   KC.Y,       KC.J,#3
+            KC.O,       KC.Q,       KC.F,                   KC.D,       KC.T,      KC.G,#9
+_★H_MO2,   KC.E,       KC.I,       KC.U,                   KC.L,       KC.S,      KC.N,        KC.P,#17
+_★A_LSFT,  KC.COMM,    KC.X,       KC.V,                   KC.M,       KC.B,      KC.DOT,      _★R_LSFT,#25
+_★C_LCTL,              KC.BSPC,    KC.MO(1),               _★SPC_LCMD, _★ENT_MO3,            _★K_LALT 
 ]
-
 num_layer = [
-                   KC.GRV,  KC.TILD,       KC.SLSH,    ast,
-          _ₓₓₓ_,   _ₓₓₓ_,   KC.DLR,        KC.N7,      KC.N8,     KC.N9,
-_ₓₓₓ_,    KC.PIPE, KC.CIRC, KC.PERC,       KC.N4,      KC.N5,     KC.N6,    KC.MINS,
-_ₓₓₓ_,    _ₓₓₓ_,   _ₓₓₓ_,   _ₓₓₓ_,         KC.N1,      KC.N2,     KC.N3,    KC.PLUS,
-_ₓₓₓ_,             _ₓₓₓ_,   _ₓₓₓ_,         _ₓₓₓ_,      KC.N0,               _ₓₓₓ_
+                        KC.GRV,     KC.TILD,                KC.SLSH,    ast,        
+            _ₓₓₓ_,      _ₓₓₓ_,      KC.DLR,                 KC.N7,      KC.N8,      KC.N9,      
+_ₓₓₓ_,      KC.PIPE,    KC.CIRC,    KC.PERC,                KC.N4,      KC.N5,      KC.N6,      KC.MINS,
+_ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,                  KC.N1,      KC.N2,      KC.N3,      KC.PLUS,
+_ₓₓₓ_,                  _ₓₓₓ_,      _ₓₓₓ_,                  _ₓₓₓ_,      KC.N0,                  _ₓₓₓ_
 ]
-
 nav_layer = [
-                 _ₓₓₓ_,  _ₓₓₓ_,         _ₓₓₓ_,     _ₓₓₓ_,
-          _ₓₓₓ_, _ₓₓₓ_,  KC.PGUP,       _ₓₓₓ_,    KC.UP,     _ₓₓₓ_,
-KC.ESC,   _ₓₓₓ_, _ₓₓₓ_,  KC.TAB,        KC.LEFT,  KC.DOWN,   KC.RIGHT, _ₓₓₓ_,
-_ₓₓₓ_,    _ₓₓₓ_, _ₓₓₓ_,  KC.PGDN,       _ₓₓₓ_,    KC.HOME,   KC.END,   _ₓₓₓ_,
-KC.TRNS,         _ₓₓₓ_,  _ₓₓₓ_,         _ₓₓₓ_,    _ₓₓₓ_,               _ₓₓₓ_
+                        _ₓₓₓ_,      _ₓₓₓ_,                  _ₓₓₓ_,      _ₓₓₓ_,
+            _ₓₓₓ_,      _ₓₓₓ_,      KC.PGUP,                _ₓₓₓ_,      KC.UP,      _ₓₓₓ_,
+KC.ESC,     _ₓₓₓ_,      _ₓₓₓ_,      KC.TAB,                 KC.LEFT,    KC.DOWN,    KC.RIGHT,   _ₓₓₓ_,
+_ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,      KC.PGDN,                _ₓₓₓ_,      KC.HOME,    KC.END,     _ₓₓₓ_,
+KC.TRNS,                _ₓₓₓ_,      _ₓₓₓ_,                  _ₓₓₓ_,      _ₓₓₓ_,                  _ₓₓₓ_
 ]
 
 F_layer = [
-                 KC.INS, KC.PSCR,       KC.F10,   KC.F11,
-          _ₓₓₓ_, KC.LTCL,_ₓₓₓ_,         KC.F7,    KC.F8,     KC.F9,
-_ₓₓₓ_,    _ₓₓₓ_, _ₓₓₓ_,  _ₓₓₓ_,         KC.F4,    KC.F5,     KC.F6,    KC.ALT,
-_ₓₓₓ_,    _ₓₓₓ_, _ₓₓₓ_,  _ₓₓₓ_,         KC.F1,    KC.F2,     KC.F3,    _ₓₓₓ_,
-hidsw,           KC.DEL, _ₓₓₓ_,         _ₓₓₓ_,    KC.F12,              blerf
+                        KC.INS,     KC.PSCR,                KC.F10,     KC.F11,
+            _ₓₓₓ_,      KC.LCTL,    _ₓₓₓ_,                  KC.F7,      KC.F8,      KC.F9,
+_ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,                  KC.F4,      KC.F5,      KC.F6,      KC.LALT,
+_ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,                  KC.F1,      KC.F2,      KC.F3,      _ₓₓₓ_,
+hidsw,                  KC.DEL,     _ₓₓₓ_,                  _ₓₓₓ_,      KC.F12,                 blerf
 ]
 
 # macros = [
@@ -131,8 +128,8 @@ def transpose(layer):
         layer[10],  layer[4],   layer[0],   layer[1],   layer[2],   layer[3],   layer[9],   layer[17],
         layer[18],  layer[11],  layer[5],   layer[6],   layer[7],   layer[8],   layer[16],  layer[25],
         layer[26],  layer[19],  layer[12],  layer[13],  layer[14],  layer[15],  layer[24],  layer[31],
-        KC.NO,      KC.NO,      layer[20],  layer[21],  layer[22],  layer[23],  KC.NO,      KC.NO,
-        KC.NO,      KC.NO,      layer[27],  layer[28],  layer[29],  layer[30],  KC.NO,      KC.NO]
+        _ₓₓₓ_,      _ₓₓₓ_,      layer[20],  layer[21],  layer[22],  layer[23],  _ₓₓₓ_,      _ₓₓₓ_,
+        _ₓₓₓ_,      _ₓₓₓ_,      layer[27],  layer[28],  layer[29],  layer[30],  _ₓₓₓ_,      _ₓₓₓ_]
 
 
 keyboard.keymap = [
