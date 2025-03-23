@@ -1,6 +1,5 @@
 print("Starting")
 
-
 import busio
 import board
 from kmk.kmk_keyboard import KMKKeyboard; keyboard = KMKKeyboard()
@@ -55,11 +54,15 @@ knum = KC.MO(1)
 knav = KC.MO(2)
 kfnc = KC.MO(3)
 
+# LEGEND
+# ★ hold tap
+# ☹ needs moved
+
 _★A_LSFT   = KC.HT(KC.A,   KC.LSFT)
 _★R_LSFT   = KC.HT(KC.R,   KC.LSFT)
 _★SPC_LCMD = KC.HT(KC.SPC, KC.LCMD)
 _★COMM_LCTL   = KC.HT(KC.COMM,   KC.LCTL)
-_★H_MO2    = KC.HT(KC.H,   knav)
+_★P_MO2    = KC.HT(KC.P,   knav)
 _★ENT_MO3  = KC.HT(KC.ENT, kfnc)
 _★DOT_LALT   = KC.HT(KC.DOT,   KC.LALT)
 _★ESC_MO1  = KC.HT(KC.ESC, knum)
@@ -90,11 +93,27 @@ hidsw = KC.HID_SWITCH
 blerf = KC.BLE_REFRESH
 
 # todos
+# - perhaps left consonant scrabble score should be higher avg.
+# - consider moving some consonants from left to right
+# move z to right
+# - ensure ZE
+# - ensure ZO
+# - ensure IZ
+# - ensure WH
+
+# tests
+# hope chop
+# size what
+# who where
+# how for
+# the 
+
+
 base_layer = [
-                        KC.Z,       KC.W,                   KC.Y,       KC.J,#3
-            KC.O,       KC.Q,       KC.F,                   KC.D,       KC.T,      KC.G,#9
-_★H_MO2,   KC.E,       KC.I,       KC.U,                   KC.L,       KC.S,      KC.N,        KC.P,#17
-_★A_LSFT,  KC.C,       KC.X,       KC.V,                   KC.M,       KC.B,      KC.K,       _★R_LSFT,#25
+                        KC.H,       KC.W,                   KC.Y,       KC.J,#3
+            KC.X,       KC.Q,       KC.F,                   KC.D,       KC.C,      KC.G,#9
+_★P_MO2,   KC.E,       KC.I,       KC.U,                   KC.L,       KC.S,      KC.N,        KC.Z,#17
+_★A_LSFT,  KC.O,       KC.K,       KC.V,                   KC.M,       KC.B,      KC.T,       _★R_LSFT,#25
 _★COMM_LCTL,           _★ESC_MO1,  KC.BSPC,               _★SPC_LCMD, _★ENT_MO3,            _★DOT_LALT 
 ]
 num_layer = [
