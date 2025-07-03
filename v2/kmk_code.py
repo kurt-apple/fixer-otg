@@ -60,9 +60,9 @@ kfnc = KC.MO(3)
 
 _★A_LSFT   = KC.HT(KC.A,   KC.LSFT)
 _★R_LSFT   = KC.HT(KC.R,   KC.LSFT)
-_★SPC_LCMD = KC.HT(KC.SPC, KC.LCMD)
+_★T_LCMD = KC.HT(KC.T, KC.LCMD)
 _★COMM_LCTL   = KC.HT(KC.COMM,   KC.LCTL)
-_★P_MO2    = KC.HT(KC.P,   knav)
+_★K_MO2    = KC.HT(KC.K,   knav)
 _★ENT_MO3  = KC.HT(KC.ENT, kfnc)
 _★DOT_LALT   = KC.HT(KC.DOT,   KC.LALT)
 _★ESC_MO1  = KC.HT(KC.ESC, knum)
@@ -75,11 +75,13 @@ combos.combos = [
     Chord((KC.D,      KC.Q), KC.DQUO), # " works
     Chord((KC.S,      KC.Q), KC.QUOT), # ' works
     Chord((KC.E,      KC.X), KC.EXLM), # works
-    Chord((_★A_LSFT, KC.T), KC.AT), # @ #! does not work
+    Chord((_★A_LSFT, _★T_LCMD), KC.AT), # @ #! does not work
     Chord((KC.O,      KC.C), KC.POUND), #! does not work
     Chord((_★A_LSFT, KC.M), KC.AMPR), #! does not work
     Chord((_★A_LSFT, KC.E, KC.I, KC.U), KC.MO(4)), #! untested
-    Chord((KC.I,      KC.U), KC.TAB),
+    Chord((KC.E,      KC.O), KC.TAB, per_key_timeout=True, timeout=75),
+    Chord((KC.I,      KC.O), KC.BSPC, per_key_timeout=True, timeout=75),
+    Chord((_★T_LCMD,  KC.L), KC.SPC, per_key_timeout=True, timeout=75)
 ]
 
 combos.combos.extend(left_and_right(KC.A, KC.LEFT_ANGLE_BRACKET, KC.RIGHT_ANGLE_BRACKET))
@@ -106,19 +108,21 @@ blerf = KC.BLE_REFRESH
 # size what
 # who where
 # how for
-# the 
+# the
 
+# required changes
+# add LCMD maybe right hand
 
 base_layer = [
-                        KC.H,       KC.W,                   KC.Y,       KC.J,#3
-            KC.X,       KC.Q,       KC.F,                   KC.D,       KC.C,      KC.G,#9
-_★P_MO2,   KC.E,       KC.I,       KC.U,                   KC.L,       KC.S,      KC.N,        KC.Z,#17
-_★A_LSFT,  KC.O,       KC.K,       KC.V,                   KC.M,       KC.B,      KC.T,       _★R_LSFT,#25
-_★COMM_LCTL,           _★ESC_MO1,  KC.BSPC,               _★SPC_LCMD, _★ENT_MO3,            _★DOT_LALT 
+                        KC.Z,       KC.X,                   KC.Q,       KC.J,#3
+            KC.W,       KC.D,       KC.F,                   KC.Y,       KC.C,      KC.G,#9
+_ₓₓₓ_,      KC.U,       KC.E,       KC.O,                   KC.L,       KC.S,      KC.N,       _ₓₓₓ_,#17
+_★A_LSFT,   KC.P,       _★K_MO2,    KC.V,                   KC.M,       KC.B,      KC.H,       _★R_LSFT,#25
+_★COMM_LCTL,            _★ESC_MO1,  KC.I,                   _★T_LCMD,   _★ENT_MO3,             _★DOT_LALT
 ]
 num_layer = [
-                        KC.GRV,     KC.TILD,                KC.SLSH,    ast,        
-            _ₓₓₓ_,      _ₓₓₓ_,      KC.DLR,                 KC.N7,      KC.N8,      KC.N9,      
+                        KC.GRV,     KC.TILD,                KC.SLSH,    ast,
+            _ₓₓₓ_,      _ₓₓₓ_,      KC.DLR,                 KC.N7,      KC.N8,      KC.N9,
 _ₓₓₓ_,      KC.PIPE,    KC.CIRC,    KC.PERC,                KC.N4,      KC.N5,      KC.N6,      KC.MINS,
 _ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,      _ₓₓₓ_,                  KC.N1,      KC.N2,      KC.N3,      KC.PLUS,
 _ₓₓₓ_,                  _ₓₓₓ_,      _ₓₓₓ_,                  _ₓₓₓ_,      KC.N0,                  _ₓₓₓ_
