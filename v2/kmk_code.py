@@ -115,9 +115,9 @@ blerf = KC.BLE_REFRESH
 
 base_layer = [
                         KC.Z,       KC.X,                   KC.Q,       KC.J,#3
-            KC.W,       KC.D,       KC.F,                   KC.Y,       KC.C,      KC.G,#9
+            KC.W,       KC.D,       KC.F,                   KC.Y,       KC.V,      KC.B,#9
 _ₓₓₓ_,      KC.U,       KC.E,       KC.O,                   KC.L,       KC.S,      KC.N,       _ₓₓₓ_,#17
-_★A_LSFT,   KC.P,       _★K_MO2,    KC.V,                   KC.M,       KC.B,      KC.H,       _★R_LSFT,#25
+_★A_LSFT,   KC.P,       _★K_MO2,    KC.G,                   KC.M,       KC.C,      KC.H,       _★R_LSFT,#25
 _★COMM_LCTL,            _★ESC_MO1,  KC.I,                   _★T_LCMD,   _★ENT_MO3,             _★DOT_LALT
 ]
 num_layer = [
